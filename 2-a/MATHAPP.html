@@ -1,0 +1,340 @@
+<!DOCTYPE  html>
+<html>
+<head><title>MATHAPP !</title>
+<style type="text/css">
+h1 {text-align:center;
+	color:white;
+	}
+form {margin-left:30px;
+}
+table {width:1300px;
+	color:black;
+	border-style:solid;
+	border-color:black;
+	border-width:1px;
+	margin-left:20px;}
+th {
+	border:1px solid green;
+	font-family:ariel;
+	font-size:22px;}
+td {text-decoration:bold;
+	border:1px solid green;
+	color:white;
+	font-size:18px;}
+</style>
+<script type="text/javascript">
+var i=1;
+function add(){
+var a=document.getElementById('first').value;
+var b=document.getElementById('second').value;
+var x= Number(a)+Number(b) ;
+var table = document.getElementById("mytable");
+var row = table.insertRow(i);
+var cell1 = row.insertCell(0);
+var cell2 = row.insertCell(1);
+var cell3 = row.insertCell(2);
+var cell4 = row.insertCell(3);
+var cell5 = row.insertCell(4);
+var a=document.getElementById('first').value;
+var b=document.getElementById('second').value;
+var r=document.createElement("input");
+r.type="button";
+r.name="R";
+r.value=" R ";
+r.addEventListener("click", function(){row.style.backgroundColor="red";});
+var y=document.createElement("input");
+y.type="button";
+y.name="Y";
+y.value=" Y ";
+y.addEventListener("click", function(){row.style.backgroundColor="#cccc00";});
+var bl=document.createElement("input");
+bl.type="button";
+bl.name="B";
+bl.value=" B ";
+bl.addEventListener("click", function(){row.style.backgroundColor="blue";});
+var n=document.createElement("input");
+n.type="button";
+n.name="None";
+n.value=" None ";
+n.addEventListener("click", function(){row.style.backgroundColor="#449966";});
+cell1.innerHTML = a;
+cell2.innerHTML = b;
+cell3.innerHTML = "Addition";
+cell4.innerHTML = x;
+cell5.appendChild(r);
+cell5.appendChild(y);
+cell5.appendChild(bl);
+cell5.appendChild(n);
+}
+function sub(){
+var a=document.getElementById('first').value;
+var b=document.getElementById('second').value;
+var x= Number(a)-Number(b) ;
+var table = document.getElementById("mytable");
+var row = table.insertRow(i);
+var cell1 = row.insertCell(0);
+var cell2 = row.insertCell(1);
+var cell3 = row.insertCell(2);
+var cell4 = row.insertCell(3);
+var cell5 = row.insertCell(4);
+var a=document.getElementById('first').value;
+var b=document.getElementById('second').value;
+var r=document.createElement("input");
+r.type="button";
+r.name="R";
+r.value=" R ";
+r.addEventListener("click", function(){row.style.backgroundColor="red";});
+var y=document.createElement("input");
+y.type="button";
+y.name="Y";
+y.value=" Y ";
+y.addEventListener("click", function(){row.style.backgroundColor="#cccc00";});
+var bl=document.createElement("input");
+bl.type="button";
+bl.name="B";
+bl.value=" B ";
+bl.addEventListener("click", function(){row.style.backgroundColor="blue";});
+var n=document.createElement("input");
+n.type="button";
+n.name="None";
+n.value=" None ";
+n.addEventListener("click", function(){row.style.backgroundColor="#449966";});
+cell1.innerHTML = a;
+cell2.innerHTML = b;
+cell3.innerHTML = "Subtraction";
+cell4.innerHTML = x;
+cell5.appendChild(r);
+cell5.appendChild(y);
+cell5.appendChild(bl);
+cell5.appendChild(n);
+}
+function mul(){
+var a=document.getElementById('first').value;
+var b=document.getElementById('second').value;
+var x= Number(a)*Number(b) ;
+var table = document.getElementById("mytable");
+var row = table.insertRow(i);
+var cell1 = row.insertCell(0);
+var cell2 = row.insertCell(1);
+var cell3 = row.insertCell(2);
+var cell4 = row.insertCell(3);
+var cell5 = row.insertCell(4);
+var a=document.getElementById('first').value;
+var b=document.getElementById('second').value;
+var r=document.createElement("input");
+r.type="button";
+r.name="R";
+r.value=" R ";
+r.addEventListener("click", function(){row.style.backgroundColor="red";});
+var y=document.createElement("input");
+y.type="button";
+y.name="Y";
+y.value=" Y ";
+y.addEventListener("click", function(){row.style.backgroundColor="#cccc00";});
+var bl=document.createElement("input");
+bl.type="button";
+bl.name="B";
+bl.value=" B ";
+bl.addEventListener("click", function(){row.style.backgroundColor="blue";});
+var n=document.createElement("input");
+n.type="button";
+n.name="None";
+n.value=" None ";
+n.addEventListener("click", function(){row.style.backgroundColor="#449966";});
+cell1.innerHTML = a;
+cell2.innerHTML = b;
+cell3.innerHTML = "Multiplication";
+cell4.innerHTML = x;
+cell5.appendChild(r);
+cell5.appendChild(y);
+cell5.appendChild(bl);
+cell5.appendChild(n);
+}
+function div(){
+var a=document.getElementById('first').value;
+var b=document.getElementById('second').value;
+var x= Number(a)/Number(b) ;
+var table = document.getElementById("mytable");
+var row = table.insertRow(i);
+var cell1 = row.insertCell(0);
+var cell2 = row.insertCell(1);
+var cell3 = row.insertCell(2);
+var cell4 = row.insertCell(3);
+var cell5 = row.insertCell(4);
+var a=document.getElementById('first').value;
+var b=document.getElementById('second').value;
+var r=document.createElement("input");
+r.type="button";
+r.name="R";
+r.value=" R ";
+r.addEventListener("click", function(){row.style.backgroundColor="red";});
+var y=document.createElement("input");
+y.type="button";
+y.name="Y";
+y.value=" Y ";
+y.addEventListener("click", function(){row.style.backgroundColor="#cccc00";});
+var bl=document.createElement("input");
+bl.type="button";
+bl.name="B";
+bl.value=" B ";
+bl.addEventListener("click", function(){row.style.backgroundColor="blue";});
+var n=document.createElement("input");
+n.type="button";
+n.name="None";
+n.value=" None ";
+n.addEventListener("click", function(){row.style.backgroundColor="#449966";});
+cell1.innerHTML = a;
+cell2.innerHTML = b;
+cell3.innerHTML = "Division";
+cell4.innerHTML = x;
+cell5.appendChild(r);
+cell5.appendChild(y);
+cell5.appendChild(bl);
+cell5.appendChild(n);
+}
+function hcf(){
+var a=document.getElementById('first').value;
+var b=document.getElementById('second').value;
+	if(Number(a)>=Number(b)){
+	for(t=0;a%b!=0;){
+	t=a%b;
+	a=b;
+	b=t;
+	}
+	x=b;
+	}
+	else{
+	for(t=0;b%a!=0;){
+	t=b%a;
+	b=a;
+	a=t;
+	}
+	x=a;
+	}
+var table = document.getElementById("mytable");
+var row = table.insertRow(i);
+var cell1 = row.insertCell(0);
+var cell2 = row.insertCell(1);
+var cell3 = row.insertCell(2);
+var cell4 = row.insertCell(3);
+var cell5 = row.insertCell(4);
+var a=document.getElementById('first').value;
+var b=document.getElementById('second').value;
+var r=document.createElement("input");
+r.type="button";
+r.name="R";
+r.value=" R ";
+r.addEventListener("click", function(){row.style.backgroundColor="red";});
+var y=document.createElement("input");
+y.type="button";
+y.name="Y";
+y.value=" Y ";
+y.addEventListener("click", function(){row.style.backgroundColor="#cccc00";});
+var bl=document.createElement("input");
+bl.type="button";
+bl.name="B";
+bl.value=" B ";
+bl.addEventListener("click", function(){row.style.backgroundColor="blue";});
+var n=document.createElement("input");
+n.type="button";
+n.name="None";
+n.value=" None ";
+n.addEventListener("click", function(){row.style.backgroundColor="#449966";});
+cell1.innerHTML = a;
+cell2.innerHTML = b;
+cell3.innerHTML = "H.C.F";
+cell4.innerHTML = x;	
+cell5.appendChild(r);
+cell5.appendChild(y);
+cell5.appendChild(bl);
+cell5.appendChild(n);
+}
+function lcm(){
+var a=document.getElementById('first').value;
+var b=document.getElementById('second').value;
+var y=0;
+var x=Number(a)*Number(b);
+if(Number(a)>=Number(b)){
+	for(t=0;a%b!=0;){
+	t=a%b;
+	a=b;
+	b=t;
+	}
+	y=b;
+	}
+	else{
+	for(t=0;b%a!=0;){
+	t=b%a;
+	b=a;
+	a=t;
+	}
+	y=a;
+	}
+var z=x/y;
+var table = document.getElementById("mytable");
+var row = table.insertRow(i);
+var cell1 = row.insertCell(0);
+var cell2 = row.insertCell(1);
+var cell3 = row.insertCell(2);
+var cell4 = row.insertCell(3);
+var cell5 = row.insertCell(4);
+var a=document.getElementById('first').value;
+var b=document.getElementById('second').value;
+var r=document.createElement("input");
+r.type="button";
+r.name="R";
+r.value=" R ";
+r.addEventListener("click", function(){row.style.backgroundColor="red";});
+var y=document.createElement("input");
+y.type="button";
+y.name="Y";
+y.value=" Y ";
+y.addEventListener("click", function(){row.style.backgroundColor="#cccc00";});
+var bl=document.createElement("input");
+bl.type="button";
+bl.name="B";
+bl.value=" B ";
+bl.addEventListener("click", function(){row.style.backgroundColor="blue";});
+var n=document.createElement("input");
+n.type="button";
+n.name="None";
+n.value=" None ";
+n.addEventListener("click", function(){row.style.backgroundColor="#449966";});
+cell1.innerHTML = a;
+cell2.innerHTML = b;
+cell3.innerHTML = "L.C.M";
+cell4.innerHTML = z;
+cell5.appendChild(r);
+cell5.appendChild(y);
+cell5.appendChild(bl);
+cell5.appendChild(n);
+}
+
+</script>
+</head>
+<body bgcolor="#449966">
+<h1>MATHAPP !</h1>
+<form>
+<input type="number" name="number1" id="first" />
+<input type="number" name="number2" id="second" /><br/><br/>
+<input type="button" value="Addition" onClick="add();">
+<input type="button" value="Subtraction" onClick="sub();">
+<input type="button" value="Multiplication" onClick="mul();">
+<input type="button" value="Division" onClick="div();">
+<input type="button" value="H.C.F" onClick="hcf();">
+<input type="button" value="L.C.M" onClick="lcm();">
+</form>
+<br/><br/>
+<table id="mytable" >
+	<tr>
+		<th>First Number</th>
+		<th>Second Number</th>
+		<th>Operation</th>
+		<th>Result</th>
+		<th>Color</th>
+	</tr>
+</table>
+
+
+</body>
+</html>

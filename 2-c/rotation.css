@@ -1,0 +1,106 @@
+body{background-color:#8470FF;}
+h1{position:absolute;
+	margin-top:500px;
+	margin-left:200px;
+	width:100px;
+	font-size:40px;}
+h2{
+	position:absolute;
+	margin-top:500px;
+	margin-left:780px;
+	font-size:40px;}
+#wrap {
+	perspective: 0px;
+}
+#cube {
+	position: absolute;
+	margin:150px 150px;
+	width: 200px;
+	transform-style: preserve-3d;
+	transition:transform 5s;
+}
+#cube div {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	text-align:center;
+	color:white;
+	font-size:40px;
+	line-height: 200px;
+}
+#back {
+	transform: translateZ(-100px) rotateY(180deg);
+	background-color:blue;
+}
+#right {
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+	background-color:green;
+}
+#left {
+	transform: rotateY(270deg) translateX(-100px);
+	transform-origin: center left;
+	background-color:pink;
+}
+#top {
+	transform: rotateX(-90deg) translateY(-100px);
+	transform-origin: top center;
+	background-color:yellow;
+}
+#bottom {
+	transform: rotateX(90deg) translateY(100px);
+	transform-origin: bottom center;
+	background-color:red;
+}
+#front {
+	-webkit-transform: translateZ(100px);
+	background-color:orange;
+}
+  @keyframes spincube {
+	from { transform: rotateY(0deg) rotateX(0deg); }
+	to { transform: rotateY(720deg) rotateX(360deg); }
+}
+#cube {
+	animation: spincube 5s infinite linear;
+	transform-origin:100px 100px;
+}
+#sphere	{
+	position: absolute;
+	margin:150px 750px;
+	width: 200px;
+	transform-style: preserve-3d;
+	transition:transform 5s;}
+#sphere>div	{
+	width:200px;
+	height:200px;
+	border-radius:100%;
+	background-color:#CD5555;}
+#yo1 {transform: translateY(0px) rotateY(180deg);border:5px solid red;}
+#yo2 {transform: translateY(-210px) rotateY(9deg);border:5px solid red;}
+#yo3 {transform: translateY(-420px) rotateY(18deg);border:5px solid red;}
+#yo4 {transform: translateY(-630px) rotateY(27deg);border:5px solid red;}
+#yo5 {transform: translateY(-840px) rotateY(36deg);border:5px solid red;}
+#yo6 {transform: translateY(-1050px) rotateY(45deg);border:5px solid blue;}
+#yo7 {transform: translateY(-1260px) rotateY(54deg);border:5px solid blue;}
+#yo8 {transform: translateY(-1470px) rotateY(63deg);border:5px solid blue;}
+#yo9 {transform: translateY(-1680px) rotateY(72deg);border:5px solid blue;}
+#yo10 {transform: translateY(-1890px) rotateY(81deg);border:5px solid blue;}
+#yo11 {transform: translateY(-2100px) rotateY(90deg);border:5px solid orange;}
+#yo12 {transform: translateY(-2310px) rotateY(99deg);border:5px solid orange;}
+#yo13 {transform: translateY(-2520px) rotateY(108deg);border:5px solid orange;}
+#yo14 {transform: translateY(-2730px) rotateY(117deg);border:5px solid orange;}
+#yo15 {transform: translateY(-2940px) rotateY(126deg);border:5px solid orange;}
+#yo16 {transform: translateY(-3150px) rotateY(135deg);border:5px solid green;}
+#yo17 {transform: translateY(-3360px) rotateY(144deg);border:5px solid green;}
+#yo18 {transform: translateY(-3570px) rotateY(153deg);border:5px solid green;}
+#yo19 {transform: translateY(-3780px) rotateY(162deg);border:5px solid green;}
+#yo20 {transform: translateY(-3990px) rotateY(171deg);border:5px solid green;}
+
+@keyframes spinsphere {
+	from { transform: rotateY(0deg) rotateX(0deg) ; }
+	to { transform: rotateY(360deg) rotateX(720deg) ;}
+}
+#sphere {
+	animation: spinsphere 5s infinite linear;
+	transform-origin:95px 95px;
+	}
